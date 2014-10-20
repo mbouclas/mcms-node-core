@@ -18,6 +18,14 @@
     "sails-mongo": "~0.10.4",
     "mongoose": "~3.8.17",
     "mongoload": "~0.1.0",
-    "sequelize": "~2.0.0-rc1"
+    "sequelize": "~2.0.0-rc1",
+    "sequelize-mold": "0.0.1",
+    "mysql": "~2.5.2",
+    "passport": "~0.2.1",
+    "passport-local": "~1.0.0",
+    "connect-redis": "~2.1.0",
+    "body-parser": "~1.9.0",
+    "express-session": "~1.9.0",
+    "connect-mongo": "~0.4.1"
   }
 }

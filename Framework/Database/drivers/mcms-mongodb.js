@@ -1,11 +1,11 @@
 var mongoload = require('mongoload'),
     mongoose = require('mongoose');
 
-module.exports = (function(Config){
+module.exports = (function(App,Config){
 
     return {
         mongoose : mongoose,
-        connection : function(){
+        connect : function(options){
             mongoose.connect('mongodb://' + Config.host +'/' + Config.database);
             this.mongoose = mongoose;
             return mongoose.connection;
