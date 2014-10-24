@@ -26,6 +26,11 @@
     "connect-redis": "~2.1.0",
     "body-parser": "~1.9.0",
     "express-session": "~1.9.0",
-    "connect-mongo": "~0.4.1"
+    "connect-mongo": "~0.4.1",
+    "passport-facebook": "~1.0.3",
+    "passport-google-oauth": "~0.1.5",
+    "connect-flash": "~0.1.1",
+    "csurf": "~1.6.2",
+    "node-dir": "~0.1.6"
   }
 }
