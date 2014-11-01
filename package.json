@@ -1,6 +1,18 @@
 {
-  "name": "mcmsNodeCore",
+  "name": "mcms-node-core",
   "description": "mcms node core module.",
+  "version": "0.0.1",
+  "keywords": [
+    "mcms",
+    "framework",
+    "cms"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Michael Bouclas",
+    "email": "mbouclas@gmail.com",
+    "url": "http://www.net-tomorrow.com/"
+  },
   "dependencies": {
     "MD5": "^1.2.1",
     "minimist": "^1.1.0",
