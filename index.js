@@ -7,10 +7,15 @@ module.exports = (function(App){
     var express = require('express');
     var app = express();
     var bodyParser = require('body-parser');
-    var baseAppPath = process.env.NODE_PATH.replace(':','');
+    //var baseAppPath = process.env.NODE_PATH.replace(':','').replace(';','');
+    var baseAppPath = App.pathName;
+
     var configPath = baseAppPath+'/App/Config';
+
     App.loadConfig = require('./lib/Framework/Config/loader');
     App.Config = App.loadConfig(configPath,baseAppPath);
+    require('./lib/Framework/Crypt/loader')(App);
+    require('./lib/Framework/Service/loader')(App);
 
     /*
      * Load databases
@@ -36,13 +41,10 @@ module.exports = (function(App){
     require('./lib/Framework/ServiceProvider/loader')(App.Config.app.serviceProviders,App);
 
 
-
-
-
-
     if (typeof App.Config.database.redis != 'undefined' && App.Config.database.redis.host != 'null'){
         App.Database.redis = require('./lib/Framework/Database/redis')(App.Config.database.redis);
     }
+
 
     /*
      * Load server
