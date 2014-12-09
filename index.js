@@ -11,18 +11,20 @@ module.exports = (function(App){
     var express = require('express');
     var app = express();
     var bodyParser = require('body-parser');
+    var NodeCache = require( "node-cache" );
     //var baseAppPath = process.env.NODE_PATH.replace(':','').replace(';','');
     var baseAppPath = App.pathName;
-
     var configPath = baseAppPath+'/App/Config';
 
     App.loadConfig = require('./lib/Framework/Config/loader');
     App.Config = App.loadConfig(configPath,baseAppPath);
+    App.Cache = new NodeCache();
     require('./lib/Framework/Log/loader')(App);
     require('./lib/Framework/Helpers/loader')(App);
     require('./lib/Framework/Crypt/loader')(App);
     require('./lib/Framework/Service/loader')(App);
     var Lang = require('mcms-node-localization');
+    App.EagerLoader = require('mcms-node-eager-loader')();
     App.Lang = new Lang({
         locales : App.Config.app.locales
     });

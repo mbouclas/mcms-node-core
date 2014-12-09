@@ -1,12 +1,19 @@
 {
   "name": "mcms-node-core",
   "description": "mcms node core module.",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "keywords": [
     "mcms",
     "framework",
     "cms"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbouclas/mcms-node-core"
+  },
+  "bugs": {
+    "url": "https://github.com/mbouclas/mcms-node-core/issues"
+  },
   "license": "MIT",
   "author": {
     "name": "Michael Bouclas",
@@ -24,10 +31,6 @@
     "express-ejs-layouts": "~1.1.0",
     "handlebars-layouts": "~0.3.3",
     "swig": "~1.4.2",
-    "waterline": "~0.10.11",
-    "sails-disk": "~0.10.4",
-    "sails-mysql": "~0.10.6",
-    "sails-mongo": "~0.10.4",
     "mongoose": "~3.8.17",
     "mongoload": "~0.1.0",
     "sequelize": "~2.0.0-rc1",
@@ -52,6 +55,8 @@
     "redis": "~0.12.1",
     "socket.io": "~1.2.0",
     "winston": "~0.8.3",
-    "mcms-node-localization": "0.0.2"
+    "mcms-node-localization": "0.0.2",
+    "mcms-node-eager-loader": "0.0.1",
+    "node-cache": "^1.0.3"
   }
 }
