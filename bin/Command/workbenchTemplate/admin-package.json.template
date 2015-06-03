@@ -1,0 +1,21 @@
+{
+  "name" : "{{module}}",
+  "package" : "{{module}}",
+  "modules" : [
+
+  ],
+  "devFiles" : {
+    "js" : [
+    ],
+    "css" : [
+    ]
+  },
+  "files" : {
+    "js" : [
+    ],
+    "css" : []
+  },
+  "menus" : [
+
+  ]
+}
