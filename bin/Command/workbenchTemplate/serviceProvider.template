@@ -1,0 +1,35 @@
+module.exports = (function(App){
+    var Command = App.Command(App);
+    var path = require('path');
+
+    function {{module}}ServiceProvider(){
+        this.packageName = '{{module}}';
+        this.MenuConfig = {
+            module : this.packageName,
+            alias : '{{module}}',
+            items : {
+            /*
+                Page: {
+                    model: 'Page', type: 'Page', titleField : 'title',alias : 'Pages'
+                }
+            */
+            }
+        };
+        this.services = {};
+        this.controllers = {};
+
+
+        if (App.CLI){
+            var commandFolder = path.join(__dirname , '../bin/Command/');
+            Command.registerCommand([
+            ]);
+
+            return;
+        }
+
+    }
+
+
+
+    return new {{module}}ServiceProvider();
+});

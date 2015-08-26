@@ -1,0 +1,14 @@
+{
+  "name": "{{module}}",
+  "description": "{{module}} description.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "{{author.name}}",
+    "email": "{{author.email}}",
+    "url": "{{author.url}}"
+  },
+  "dependencies": {
+
+  }
+}
