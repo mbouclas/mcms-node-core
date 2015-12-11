@@ -1,7 +1,7 @@
 {
   "name": "mcms-node-core",
   "description": "mcms node core module.",
-  "version": "0.1.43",
+  "version": "0.1.44",
   "keywords": [
     "mcms",
     "framework",
